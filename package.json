@@ -1,0 +1,24 @@
+{
+  "name": "btsttgscraper",
+  "version": "1.0.0",
+  "description": "Web Scraper For The Anarchist in All if Us",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rbaird2001/btsttgScraper.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rbaird2001/btsttgScraper/issues"
+  },
+  "homepage": "https://github.com/rbaird2001/btsttgScraper#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^3.1.0"
+  }
+}

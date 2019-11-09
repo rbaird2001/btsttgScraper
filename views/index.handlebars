@@ -1,0 +1,32 @@
+<div class="container">
+    <div class="row artCollection">
+        <div class="col-xs-1-12 artMainColumn">
+            <!-- article detail here -->
+            {{#each articles}}
+            <div class="row article jumbotron">
+                <div class="col-xs-1-12 w-75">
+
+                    <div class="row container title text-center">
+                        <h3> {{this.title}} </h3>
+                        <button type="button" class="btn btn-outline-success">Save Article</button>
+                    </div>
+
+                    <div class="row container subtitle font-italic w-75">
+                        <h4>{{this.sub}}</h4>
+                    </div>
+                    <div class="row container byline w-50">
+                        <h6>{{this.byline}}</h6>
+                    </div>
+                    <div class="row container href text-center mb-3">
+                        <p><a href={{this.href}}>{{this.href}}</a></p>
+                    </div>
+                </div>
+            </div>
+            {{/each}}
+        </div>
+    </div>
+</div>
+</div>
+<div class="scripts">
+    <script src="">//TODO ADD YOUR JS</script>
+</div>
