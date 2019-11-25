@@ -48,7 +48,7 @@ module.exports = function() {
         return fVal;
       }, []);
 
-      console.log(articles);
+      //console.log(articles);
       return articles;
     })
     .catch(err => console.log(err));
