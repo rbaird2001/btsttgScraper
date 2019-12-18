@@ -1,6 +1,6 @@
 const reasonMag = require("../services/scrapeReason");
 db = require("../model/dbConfig");
-const Article = require("../model/articleSchema");
+//const Article = require("../model/articleSchema");
 const Note = require("../model/noteSchema");
 const SavedArticle = require("../model/savedArtSchema");
 
