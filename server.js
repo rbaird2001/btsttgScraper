@@ -1,7 +1,6 @@
 const express = require("express");
 const PORT = process.env.PORT || 3000;
 const app = express();
-require("./controller/apiRoutes.js")(app);
 
 // Serve static content for the app from the "public" directory in the application directory.
 app.use(express.static("public"));
@@ -15,6 +14,7 @@ var exphbs = require("express-handlebars");
 app.engine("handlebars", exphbs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
 
+require("./controller/apiRoutes.js")(app);
 // Import routes and give the server access to them.
 
 app.listen(PORT, function() {

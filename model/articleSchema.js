@@ -1,6 +1,6 @@
 const mongoose = require("mongoose")
 const Schema =  mongoose.Schema
-const Note = require("./noteSchema")
+//const Note = require("./noteSchema")
 const ArticleSchema = new Schema({
     href:{
         type: String,
@@ -22,6 +22,10 @@ const ArticleSchema = new Schema({
         type: String,
         required: true
     },
+    notes:{
+        type: Schema.Types.ObjectId,
+        ref: "Note"
+    }
 })
 
 

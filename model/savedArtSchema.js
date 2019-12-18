@@ -22,6 +22,10 @@ const SavedSchema = new Schema({
         type: String,
         required: true
     },
+    artId:{
+        type: String,
+        required: true,
+    },
     notes: [
         {
           // Store ObjectIds in the array
@@ -31,6 +35,5 @@ const SavedSchema = new Schema({
         }
       ]
 })
-
 
 module.exports = mongoose.model("SavedArticle",SavedSchema);

@@ -35,7 +35,11 @@ module.exports = function() {
           return $(this).text();
         })
         .get();
-
+      const artId = $("article.published h4 a")
+        .map(function() {
+          return $(this).attr("href").replace("https://reason.com/","").replace(/\//g,"_")
+        })
+        .get();
       const articles = hrefs.reduce((fVal, cVal, idx) => {
         fVal.push({
           href: cVal,
@@ -43,7 +47,7 @@ module.exports = function() {
           sub: sub[idx],
           date: time[idx],
           byline: byline[idx].trim(),
-          stored: 0
+          artId: artId[idx].trim(),
         });
         return fVal;
       }, []);
