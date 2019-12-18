@@ -44,7 +44,7 @@ module.exports = function(app) {
     }
   });
 
-  app.get("/articles/saved/", async (req, res) => {
+  app.get("/articles/saved", async (req, res) => {
     const dataset = await SavedArticle.find().populate("notes");
     console.log(dataset);
     res.render("savedArticles", { articles: dataset });
