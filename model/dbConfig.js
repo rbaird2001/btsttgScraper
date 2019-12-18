@@ -1,5 +1,5 @@
-require("dotenv");
-const db = "mongodb://localhost/btsttg" || process.env.MONGODB_URI;
+//require("dotenv");
+const db = process.env.MONGODB_URI || "mongodb://localhost/btsttg" ;
 const mongoose = require("mongoose");
 //const Article = require("../model/articleSchema");
 //const Note = require("./noteSchema");
